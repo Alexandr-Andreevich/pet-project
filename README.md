@@ -6,23 +6,23 @@
 
 1. Установите зависимости:
 ```bash
-python -m pip install -r requirements.txt
+py -m pip install -r requirements.txt
 ```
 
 2. Создайте и активируйте виртуальное окружение:
 ```bash
-python -m venv .venv
-venv\Scripts\activate    # Windows
+py -m venv .venv
+.venv\Scripts\activate    # Windows
 ```
 
 3. Запустите миграции:
 ```bash
-python manage.py migrate
+py manage.py migrate
 ```
 
 4. Создайте суперпользователя:
 ```bash
-python manage.py createsuperuser
+py manage.py createsuperuser
 ```
 
 5. Загрузите копии данных:
@@ -33,5 +33,10 @@ py manage.py loaddata fixtures/goods/producti.json
 
 6. Запустите сервер:
 ```bash
-python manage.py runserver
+py manage.py runserver
+```
+7. Данные админа:
+```bash
+login: admin
+passwod: 1234
 ```
