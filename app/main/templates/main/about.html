@@ -1,0 +1,23 @@
+{% extends 'base.html' %} <!-- указываем путь до наполняемого шаблона -->
+{% load static %} <!-- подгружаем стстические файлы -->
+
+{% block index_css_style_footer %}
+    <link rel="stylesheet" href="{% static 'deps/css/my_footer_css.css' %}">
+{% endblock %}
+
+{% block cart_modal %}
+    {% include "includes/cart_button.html" %}
+{% endblock %}
+
+{% block content_on_page %}
+    <h3 class="mt-5 pt-5 h3text"><strong>{{ content }}</strong></h3>
+    <p style="color:#c5c5c5">{{ text_on_page }}</p>
+{% endblock %}
+
+{% block footer %}
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Home Python Hub Studio 2023</p>
+        </div>
+    </footer>
+{% endblock %}
