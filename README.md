@@ -35,8 +35,3 @@ py manage.py loaddata fixtures/goods/producti.json
 ```bash
 py manage.py runserver
 ```
-7. Данные админа:
-```bash
-login: admin
-passwod: 1234
-```
