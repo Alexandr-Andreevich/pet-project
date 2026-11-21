@@ -4,16 +4,28 @@
 
 ### 1. Локальный запуск
 
-1. Установите зависимости:
-```bash
-py -m pip install -r requirements.txt
-```
+# Клонируйте репозиторий
+```git clone https://github.com/Alexandr-Andreevich/pet-project.git```
+
+# Перейдите в директорию проекта
+```cd pet-project```
 
 2. Создайте и активируйте виртуальное окружение:
 ```bash
 py -m venv .venv
 .venv\Scripts\activate    # Windows
 ```
+
+Установите Django
+```
+pip install django
+```
+
+1. Установите зависимости:
+```bash
+py -m pip install -r requirements.txt
+```
+
 
 3. Запустите миграции:
 ```bash
