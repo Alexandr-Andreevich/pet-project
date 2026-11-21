@@ -16,16 +16,15 @@ py -m venv .venv
 .venv\Scripts\activate    # Windows
 ```
 
-Установите Django
-```
-pip install django
-```
-
 1. Установите зависимости:
 ```bash
 py -m pip install -r requirements.txt
 ```
 
+Перейдите в папку с проектом
+```
+cd app
+```
 
 3. Запустите миграции:
 ```bash
